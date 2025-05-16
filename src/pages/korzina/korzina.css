@@ -1,0 +1,275 @@
+.korzina-cart {
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 9px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.korzina-subtitle {
+    color: rgba(41, 41, 41, 1);
+    font-size: 16px;
+    margin-bottom: 34px;
+    text-align: center;
+    font-family: "ProximaNova", sans-serif;
+    font-weight: 400;
+}
+
+.korzina-cart-container {
+    display: flex;
+    gap: 20px;
+}
+
+.korzina-cart-items {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.korzina-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.korzina-product-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.korzina-img-placeholder {
+    width: 80px;
+    height: 80px;
+    background: #ccc;
+    margin-right: 15px;
+}
+
+.korzina-details h2 {
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+.korzina-details p {
+    font-size: 14px;
+    color: #333;
+}
+
+.korzina-gift {
+    color: #ff5b77;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.korzina-quantity-control {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.korzina-quantity-control button {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.korzina-quantity-control span {
+    margin: 0 8px;
+    font-size: 16px;
+}
+
+.korzina-price-info {
+    text-align: right;
+    min-width: 90px;
+}
+
+.korzina-price-info p {
+    margin: 2px 0;
+}
+
+.korzina-price-info span {
+    font-weight: bold;
+}
+
+.korzina-discount {
+    color: #ff5b77;
+    font-size: 13px;
+}
+
+.korzina-total-text {
+    text-align: right;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.korzina-total-text .highlighted {
+    color: #ff0050;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.korzina-total-text .crossed {
+    text-decoration: line-through;
+    color: #aaa;
+    margin-left: 10px;
+}
+
+.korzina-summary {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 473px;
+    height: 369px;
+    border: 1px solid #eee;
+}
+
+.korzina-summary h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.korzina-summary-line,
+.korzina-summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.korzina-summary-total {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.korzina-promo-code {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.korzina-promo-code input {
+    flex: 1;
+    width: 15px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    left: 40%;
+}
+
+.korzina-promo-code button {
+    background: #f33c69;
+    color: white;
+    border: none;
+    /*padding: 8px 15px;*/
+    justify-content: right;
+    margin-left: 310px;
+    border-radius: 1px;
+    cursor: pointer;
+    width: 118px;
+    height: 44px;
+    position: absolute;
+}
+
+.korzina-order-btn {
+    width: 254px;
+    height: 50px;
+    margin: auto;
+    background: #f33c69;
+    color: white;
+    border: none;
+    /*padding: 12px;*/
+    font-size: 16px;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.korzina-together-deal {
+    margin-top: 32px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.03);
+}
+
+.korzina-deal-header {
+    background: linear-gradient(90deg, #ffe4e4, #fff);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.korzina-deal-header .arrow {
+    width: 60px;
+    height: 20px;
+    background: url('https://cdn-icons-png.flaticon.com/512/545/545705.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.3;
+}
+
+.korzina-deal-item {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 1px solid #eee;
+}
+
+.korzina-deal-item:first-of-type {
+    border-top: none;
+}
+
+.korzina-deal-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 6px;
+    object-fit: cover;
+    background: #ddd;
+    margin-right: 16px;
+}
+
+.korzina-deal-title {
+    flex: 1;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+.korzina-deal-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 12px;
+    font-size: 14px;
+}
+
+.korzina-old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.korzina-new-price {
+    color: #ff2e63;
+    font-weight: 600;
+}

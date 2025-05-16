@@ -1,0 +1,111 @@
+.section1{
+    display: flex;
+}
+
+.section1-info-text{
+    padding-top: 80px;
+    margin-left: 60px;
+
+
+    h1{
+        font-size: 42px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        text-align: center;
+    }
+    p{
+        color: rgba(41, 41, 41, 1);
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 13px;
+        font-family: 'ProximaNova', sans-serif;
+        margin-bottom: 35px;
+    }
+
+    .info-text p{
+        text-align: left;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'ProximaNova', sans-serif;
+        color: rgba(41, 41, 41, 1);
+
+    }
+}
+
+.bg-info-yellowShadow1{
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -200px;
+    width: 436px;
+    height: 436px;
+    color: rgba(255, 230, 200, 0.37);
+}
+
+.bg-info-yellowShadow2{
+    position: absolute;
+    width: 376px;
+    height: 376px;
+    margin-left: 590px;
+    margin-top: -200px;
+    color: rgba(255, 230, 200, 0.37);
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px; /* можешь указать свою высоту */
+}
+
+.image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg-img-list {
+    z-index: 1;
+    margin-left: 280px;
+    margin-top: 110px;
+}
+
+.bg-img-mac1 {
+    z-index: 10;
+    margin-left: 300px;
+    margin-top: 236px;
+}
+
+.bg-img-mac2 {
+    z-index: 10;
+    margin-top: 150px;
+    margin-left: -50px;
+}
+
+.bg-img-yellowShadow {
+    z-index: -1;
+    margin-top: -150px;
+    margin-left: -50px;
+}
+
+.bg-img-yellowShadow2 {
+    z-index: -1;
+    margin-top: -20px;
+    margin-left: -150px;
+}
+
+.bg-img-pinkShadow {
+    z-index: 1;
+    margin-top: 130px;
+    margin-left: 130px;
+}
+
+.bg-img-pinkShadow2 {
+    z-index: 1;
+    margin-top: 280px;
+    margin-left: 50px;
+}
+
+.front-img-vaza{
+    width: 303px;
+    height: 479px;
+}
