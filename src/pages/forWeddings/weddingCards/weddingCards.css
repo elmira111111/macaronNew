@@ -1,0 +1,126 @@
+.nabor-section {
+    padding: 40px;
+    font-family: 'Inter', sans-serif;
+}
+
+.wedding-title {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 52px;
+    color: #333;
+}
+
+.nabor-filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.nabor-filters button {
+    padding: 10px 20px;
+    border: none;
+    background: rgba(247, 235, 229, 1);;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.nabor-filters button:hover {
+    background: #f0f0f0;
+    border-color: #d5d5d5;
+}
+.nabor-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.nabor-card {
+    border: 1px solid #eee;
+    border-radius: 1px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.nabor-card img {
+    width: 100%;
+    height: 100%;
+    max-width: 370px;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.nabor-card-info {
+    padding: 22px 0 30px 22px;
+}
+
+.nabor-card-info h3 {
+    margin: 0 0 14px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nabor-card-info p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(41, 41, 41, 1);
+    font-family: "ProximaNova", sans-serif;
+    font-weight: 300;
+}
+
+.price .cart-btn .nabor-basket{
+    max-width: 13px;
+    max-height: 19px;
+}
+
+.nabor-bottom {
+    display: flex;
+    border-top: 1px solid #eee;
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+}
+
+.nabor-bottom .price {
+    flex: 1;
+    padding: 14px 72px 14px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(231, 66, 106, 1);
+    border-right: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.cart-btn {
+    flex: 1;
+    padding: 12px;
+    background: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    gap: 11px;
+    cursor: pointer;
+}
+
+.cart-btn:hover {
+    background-color: #f9f9f9;
+}
