@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0)
+import VyborKolich from "./pages/sobratNabory/vyborKolich/VyborKolich.jsx";
+import CardsSlider from "./pages/cardTovara/cardsSlider/CardsSlider.jsx";
+import CardTovara from "./pages/cardTovara/tovarCards/CardTovara.jsx";
+import HomePage from "./homePage/HomePage.jsx";
+import InfoSection from "./pages/cardTovara/infoSection/InfoSection.jsx";
+import NaborCards from "./pages/podarkaNabory/naborCards/NaborCards.jsx";
+import WeddingCards from "./pages/forWeddings/weddingCards/WeddingCards.jsx";
+import Section1 from "./pages/forWeddings/section1/Section1.jsx";
+import Korzina from "./pages/korzina/Korzina.jsx";
+import VyborVkusov from "./pages/vyborVkusov/VyborVkusov.jsx";
+import Dopolnenie from "./pages/dopolnenie/Dopolnenie.jsx";
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+const App = () => {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/vybor" element={<VyborKolich />} />
+                <Route path="/nabor" element={<NaborCards />} />
+                <Route path="/korzina" element={<Korzina />} />
+                <Route path="/vkusy" element={<VyborVkusov />} />
+                <Route path="/dopolnenie" element={<Dopolnenie />} />
+                <Route path="/weddings" element={
+                    <>
+                        <Section1/>
+                        <WeddingCards />
+                    </>
+                } />
+                <Route
+                    path="/card-tovara"
+                    element={
+                        <>
+                            <CardTovara />
+                            <InfoSection />
+                            <CardsSlider />
+                        </>
+                    }
+                />
+            </Routes>
+        </Router>
+    );
+};
 
-export default App
+export default App;

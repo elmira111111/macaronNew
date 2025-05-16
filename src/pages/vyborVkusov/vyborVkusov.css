@@ -1,0 +1,240 @@
+/* Основной контейнер */
+.vybor-container {
+    font-family: "Arial", sans-serif;
+    padding: 40px 80px;
+}
+
+/* Хлебные крошки */
+.breadcrumb {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.breadcrumb a {
+    color: #888;
+    text-decoration: none;
+    margin-right: 5px;
+}
+.breadcrumb .active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Заголовок */
+.title {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Основной контент */
+.content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Сетка вкусов */
+.flavors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex: 1;
+}
+
+.card {
+    width: 273px;
+    height: 370px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.card img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+    margin: 0 0 20px 0;
+}
+
+.card .bottom {
+    border-top: 1px solid #eee;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    margin-top: auto;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.counter button {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 1;
+}
+.counter span {
+    min-width: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+/* Боковая панель */
+.summary {
+    background: white;
+    padding: 24px 20px;
+    border-radius: 12px;
+    width: 290px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    color: #222;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+}
+
+.summary-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.summary-title .price {
+    color: #e60060;
+    font-weight: 500;
+}
+
+.summary p {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 20px;
+}
+.summary .price {
+    color: #e60060;
+    font-weight: bold;
+}
+
+.summary-list {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.summary-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.summary-list li:last-child {
+    margin-bottom: 0;
+}
+
+.mini-counter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+    border-radius: 6px;
+    justify-content: center;
+}
+
+.mini-counter button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.mini-counter span {
+    min-width: 18px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.mini-counter .remove {
+    font-size: 18px;
+    color: #aaa;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.warning {
+    font-size: 13px;
+    color: #444;
+    margin: 16px 0;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn.primary {
+    background-color: #f34275;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+}
+.btn.primary:hover {
+    background-color: #e60060;
+}
+
+.btn.secondary {
+    background-color: white;
+    color: #f34275;
+    border: 2px solid #f34275;
+}
+.btn.secondary:hover {
+    background-color: #fff0f5;
+}
