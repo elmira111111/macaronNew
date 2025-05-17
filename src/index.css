@@ -1,0 +1,14 @@
+
+.container{
+    width: 1470px;
+}
+
+.container-app{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #EDEDF0;
+}
+
