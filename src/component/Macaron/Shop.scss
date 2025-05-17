@@ -1,0 +1,110 @@
+.shop {
+    margin-top: 18px;
+    width: 1440px;
+
+    .breadcrumb-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .cap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 50px;
+
+        ul {
+            list-style: none;
+            display: flex;
+            column-gap: 30px;
+
+            li {
+                color: rgb(0, 0, 0);
+                font-family: sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0%;
+
+            }
+
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+
+            img {
+
+                width: 124px;
+                height: 124px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .adaptive-cap {
+        display: none;
+    }
+
+
+}
+
+@media(max-width:820px) {
+    .shop {
+        .cap {
+            display: none;
+        }
+
+        .adaptive-cap {
+            width: 320px;
+            height: 59px;
+            background: rgb(247, 235, 229);
+            display: block;
+
+
+            div {
+                padding: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                
+            }
+
+            .card3 {
+
+                img {
+                    width: 14px;
+                    height: 20.01px;
+                }
+
+
+                span {
+                    position: relative;
+                    top: 8px;
+                    left: 5px;
+                    width: 13px;
+                    height: 13px;
+                    transform: translateX(-95%);
+                    background: red;
+                    color: white;
+                    border-radius: 50%;
+                    font-size: 14px;
+                    color: rgb(255, 255, 255);
+                    font-family: sans-serif;
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 12px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    background: rgb(0, 0, 0);
+                    padding: 1px 2px;
+                }
+            }
+
+        }
+    }
+
+
+}

@@ -1,0 +1,42 @@
+.ingredient {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    position: relative;
+    bottom: 140px;
+
+    .best {
+        width: 270px;
+        height: 401px;
+
+        img {
+            width: 270px;
+            height: 270px;
+        }
+
+        .best-content {
+
+
+            h2 {
+                /* Montserrat semi 24 */
+                color: rgb(41, 41, 41);
+                font-family: sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+
+            p {
+                color: rgb(41, 41, 41);
+                font-family: sans-serif ;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+        }
+    }
+}

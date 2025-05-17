@@ -1,0 +1,109 @@
+.stock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    justify-content: center;
+    margin-top: 50px;
+
+
+
+    .cod {
+        width: 270px;
+        height: 380px;
+
+
+
+        img {
+            width: 270px;
+            height: 270px;
+        }
+
+
+
+        .cod2 {
+            width: 270px;
+            height: 110px;
+            border-radius: 0px 0px 5px 5px;
+            position: relative;
+            bottom: 5px;
+            padding: 20px;
+
+            p {
+                width: 210px;
+                color: rgb(255, 255, 255);
+                font-family: sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+                letter-spacing: 0%;
+                text-align: center;
+            }
+        }
+
+        .blue-bg {
+            background-color: rgb(140, 196, 236); // көк түс
+        }
+
+        .red-bg {
+            background-color: rgb(255, 77, 109); // кызыл түс
+        }
+
+
+        .item {
+            position: relative;
+            top: 40px;
+            background: rgb(140, 196, 236);
+            padding: 4px 0px 4px 10px;
+            clip-path: polygon(0 0, 90% 0, 85% 50%, 90% 100%, 0 100%);
+            display: flex;
+            justify-content: flex-start;
+
+
+
+            h3 {
+                color: rgb(255, 255, 255);
+                font-family: sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 19px;
+                letter-spacing: 0%;
+
+            }
+        }
+
+        .blue-p {
+            background: rgb(140, 196, 236);
+        }
+
+        .red-p {
+            background: rgb(255, 77, 109);
+        }
+    }
+
+  
+}
+
+
+.ribbon {
+    width: 100px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    transform: rotate(-45deg);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    font-size: 12px;
+
+    p {
+        color: rgb(255, 255, 255);
+        font-family: Proxima Nova;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+}
