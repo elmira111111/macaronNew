@@ -54,8 +54,18 @@ const NaborCards = () => {
                 <div className="nabor-cards">
                     {naborData.map((item) => (
                         <div className="nabor-card" key={item.id}>
-                            <img src={img} alt={item.images} />
+                            {item.images?.map((image, index) => (
+                                <div key={index} className="nabor-img-wrapper">
+                                    <img
+                                        src={`http://ec2-51-21-3-88.eu-north-1.compute.amazonaws.com${image.startsWith("/") ? image : "/" + image}`}
+                                        alt={item.name}
+                                        className="nabor-img"
+                                    />
+                                </div>
+                            ))}
+
                             <div className="nabor-card-info">
+                                <h1>{item.id}</h1>
                                 <h3>{item.name}</h3>
                                 <p>{item.description}</p>
                             </div>

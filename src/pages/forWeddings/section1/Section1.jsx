@@ -6,13 +6,15 @@ import mac2 from "../../../assets/weddingMac2.svg";
 import yellowShadow from "../../../assets/weddingYellowShadow.svg";
 import yellowShadow2 from "../../../assets/weddingYellowShadow2.svg";
 import pinkShadow from "../../../assets/weddingPinkShadow.svg";
+import React from "react";
 
 
 const Section1 = () => {
     return (
         <div className={'container'}>
-            <nav className="breadcrumbs">
-                Главная&gt; <span> Предложение для свадеб</span>
+            <nav className="breadcrumb">
+                <a href="#">Главная</a>>
+                <a href="#" className="active">Предложение для свадеб </a>
             </nav>
             <div className="section1 container-app">
                 <div className="image-wrapper">
@@ -35,7 +37,7 @@ const Section1 = () => {
                         <p style={{marginBottom: '20px'}}>Рыба-текст предложения </p>
                         <p>Приятно, граждане, наблюдать, как действия представителей оппозиции, превозмогая сложившуюся
                             непростую экономическую ситуацию, смешаны с не уникальными данными до степени совершенной
-                            неузнаваемости, из-за чего возрастает их статус бесполезности. </p>
+                            неузнаваемости, из-за чего возрастает их статус <br/> бесполезности. </p>
                     </div>
                 </div>
             </div>

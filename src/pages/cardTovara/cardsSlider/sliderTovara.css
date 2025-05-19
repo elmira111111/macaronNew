@@ -1,0 +1,9 @@
+.slierTittle {
+    text-align: center;
+    font-size: 30px;
+    /*width: 1170px;*/
+    color: rgba(41, 41, 41, 1);
+    font-weight: 600;
+    margin-bottom: 36px;
+    font-family: "Montserrat", sans-serif;
+}

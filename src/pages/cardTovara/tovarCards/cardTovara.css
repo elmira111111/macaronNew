@@ -16,13 +16,13 @@
 }
 
 
-.thumbnails {
+.thumbnails-tovara {
     display: flex;
     gap: 15px;
     margin-top: 14px;
 }
 
-.thumbnails img {
+.thumbnails-tovara img {
     width: 72px;
     height: 72px;
     object-fit: cover;
@@ -30,20 +30,21 @@
     cursor: pointer;
 }
 
-.info-section {
+.info-section-tovara {
     max-width: 570px;
     margin-top: -25px;
 }
 
-.title {
+.title-tovara {
     font-size: 30px;
     font-weight: 600;
+    text-align: left;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 11px;
     color: rgba(41, 41, 41, 1);
 }
 
-.subtitle {
+.subtitle-tovara {
     color: rgba(41, 41, 41, 1);
     font-size: 16px;
     margin-bottom: 20px;
@@ -52,7 +53,7 @@
     opacity: 80%;
 }
 
-.flavors{
+.flavors-tovara{
     width: 570px;
     background: white;
     margin: auto;
@@ -63,7 +64,7 @@
     border: 1px solid rgba(237, 237, 240, 1);
 }
 
-.flavors h3 {
+.flavors-tovara h3 {
     font-size: 18px;
     margin-bottom: 10px;
     padding-left: 27px;
@@ -71,14 +72,14 @@
     font-family: "Gom", sans-serif;
 }
 
-.flavors ul {
+.flavors-tovara ul {
     list-style: none;
     padding-left: 27px;
     padding-bottom: 24px;
     padding-right: 27px;
 }
 
-.flavors li {
+.flavors-tovara li {
     display: flex;
     justify-content: space-between;
     font-size: 16px;
@@ -91,7 +92,7 @@
     border-bottom: 1px dashed rgba(237, 237, 240, 1);
 }
 
-.flavors span{
+.flavors-tovara span{
     color: rgba(41, 41, 41, 1);
     font-size: 16px;
     line-height: 22px;
@@ -99,7 +100,7 @@
 
 }
 
-.price-section {
+.price-section-tovara {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -114,14 +115,14 @@
     margin-top: 20px;
 }
 
-.price {
+.price-tovara {
     font-size: 24px;
     color: rgba(231, 66, 106, 1);
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
 }
 
-.add-to-cart {
+.add-to-cart-tovara {
     background-color: rgba(231, 66, 106, 1);
     width: 178px;
     height: 50px;
@@ -137,11 +138,11 @@
 
 }
 
-.add-to-cart:hover {
+.add-to-cart-tovara:hover {
     background-color: #d81b60;
 }
 
-.delivery-info {
+.delivery-info-tovara {
     list-style: none;
     padding: 0;
     font-size: 14px;
@@ -150,7 +151,7 @@
     margin-top: 25px;
 }
 
-.delivery-info li {
+.delivery-info-tovara li {
     margin-bottom: 10px;
     display: flex;
     height: 46px;

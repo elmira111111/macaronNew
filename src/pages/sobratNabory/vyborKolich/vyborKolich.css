@@ -1,6 +1,5 @@
 .vybor-page {
     padding: 40px 60px;
-    background-color: #f8f8f8;
     font-family: 'Arial', sans-serif;
 }
 
@@ -31,21 +30,25 @@
     display: flex;
     flex-wrap: wrap;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 25px;
+    gap: 30px;
     margin: auto;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgba(237, 237, 240, 1);
+    border-radius: 1px;
 }
 
 .set-card {
     background-color: #fff;
     border-radius: 1px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     text-align: center;
-    /*padding: 20px;*/
+    align-items: center; /* Центрирует по горизонтали */
     transition: all 0.3s ease;
-    width: 271px;
+    flex-direction: column;
+    /*width: 271px;*/
     height: 317px;
+    padding: 14px;
 }
 
 .set-card:hover {
@@ -55,19 +58,21 @@
 
 .set-card img {
     width: 100%;
-    max-height: 160px;
+    max-height: 192px;
+    max-width: 244px;
     object-fit: contain;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    align-items: center;
 }
 
 .set-title {
-    font-size: 16px;
+    font-size: 14px;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .set-price {
-    font-size: 16px;
+    font-size: 18px;
     color: #e6004c;
     font-weight: bold;
 }
