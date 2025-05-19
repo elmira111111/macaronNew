@@ -1,22 +1,25 @@
 .section1{
     display: flex;
+    margin-top: 150px;
 }
 
 .section1-info-text{
-    padding-top: 80px;
-    margin-left: 60px;
-
+    padding-top: 50px;
+    margin-left: 57px;
 
     h1{
         font-size: 42px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         text-align: center;
+        line-height: 100%;
+        margin-bottom: 23px;
+        letter-spacing: 0;
     }
     p{
         color: rgba(41, 41, 41, 1);
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 300;
         text-align: center;
         margin-top: 13px;
         font-family: 'ProximaNova', sans-serif;
@@ -25,12 +28,32 @@
 
     .info-text p{
         text-align: left;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 300;
         font-family: 'ProximaNova', sans-serif;
         color: rgba(41, 41, 41, 1);
+        line-height: 135%;
+        letter-spacing: 1px;
 
     }
+}
+
+/* Хлебные крошки */
+.breadcrumb {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 10px;
+}
+.breadcrumb span {
+    color: #888;
+    text-decoration: none;
+    margin-right: 5px;
+}
+.breadcrumb .active {
+    color: #007bff;
+    font-weight: bold;
 }
 
 .bg-info-yellowShadow1{
@@ -54,6 +77,7 @@
 .image-wrapper {
     position: relative;
     width: 100%;
+    margin-left: -120px;
     height: 600px; /* можешь указать свою высоту */
 }
 
@@ -71,14 +95,14 @@
 
 .bg-img-mac1 {
     z-index: 10;
-    margin-left: 300px;
+    margin-left: 310px;
     margin-top: 236px;
 }
 
 .bg-img-mac2 {
     z-index: 10;
     margin-top: 150px;
-    margin-left: -50px;
+    margin-left: -40px;
 }
 
 .bg-img-yellowShadow {
@@ -90,13 +114,15 @@
 .bg-img-yellowShadow2 {
     z-index: -1;
     margin-top: -20px;
-    margin-left: -150px;
+    margin-left: -180px;
 }
 
 .bg-img-pinkShadow {
-    z-index: 1;
-    margin-top: 130px;
-    margin-left: 130px;
+    z-index: 100;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 400px;
+    height: 400px;
 }
 
 .bg-img-pinkShadow2 {

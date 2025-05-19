@@ -1,6 +1,5 @@
 .korzina-cart {
     padding: 30px;
-    background-color: #f9f9f9;
 }
 
 h1 {
@@ -29,8 +28,10 @@ h1 {
     flex: 2;
     background: white;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 1px;
     border: 1px solid #eee;
+    width: 670px;
+    height: 453px;
 }
 
 .korzina-item {
@@ -40,6 +41,81 @@ h1 {
     border-bottom: 1px solid #eee;
     padding-bottom: 15px;
 }
+
+.korzina-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.korzina-product-img {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc; /* временно если нет изображения */
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.korzina-details h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.korzina-quantity-control {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.korzina-quantity-control button {
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.korzina-quantity-control span {
+    font-size: 16px;
+    width: 18px;
+    text-align: center;
+}
+
+.korzina-price-info {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #222;
+}
+
+.korzina-price-info span {
+    color: #f55;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.korzina-remove-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.korzina-remove-btn:hover {
+    color: #555;
+}
+
 
 .korzina-product-img {
     width: 80px;
@@ -111,14 +187,18 @@ h1 {
 }
 
 .korzina-total-text {
-    text-align: right;
     font-size: 14px;
+    font-family: "ProximaNova", sans-serif;
+    font-weight: 400;
     margin-top: 15px;
+    justify-content: space-between !important;
 }
 
-.korzina-total-text .highlighted {
+.korzina-total-text .korzina-highlighted {
     color: #ff0050;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
     margin-left: 5px;
 }
 
@@ -136,24 +216,34 @@ h1 {
     width: 473px;
     height: 369px;
     border: 1px solid #eee;
+    font-family: "ProximaNova", sans-serif;
 }
 
 .korzina-summary h3 {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(41, 41, 41, 1);
 }
 
 .korzina-summary-line,
 .korzina-summary-total {
     display: flex;
     justify-content: space-between;
+    font-family: "ProximaNova", sans-serif;
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 16px;
+    border-bottom: 1px dashed rgba(237, 237, 240, 1);
+    color: rgb(62, 62, 62);
 }
 
 .korzina-summary-total {
-    font-weight: bold;
+    font-weight: 400;
     font-size: 16px;
+    border-bottom: 1px solid rgba(237, 237, 240, 1);
+    border-top: 1px solid rgba(237, 237, 240, 1);
+    padding: 10px 1px 16px 1px;
 }
 
 .korzina-promo-code {
@@ -162,40 +252,47 @@ h1 {
     margin: 20px 0;
 }
 
-.korzina-promo-code input {
+.korzina-promo-code-input{
     flex: 1;
-    width: 15px;
-    height: 40px;
+    height: 36px;
     border: 1px solid #ddd;
     border-radius: 1px;
-    left: 40%;
+    background: rgba(237, 237, 240, 1);
+    color:rgba(41, 41, 41, 1);
+    width: 30%;
+    font-size: 14px;
+    font-family: "ProximaNova", sans-serif;
+    font-weight: 400;
 }
 
 .korzina-promo-code button {
     background: #f33c69;
     color: white;
     border: none;
-    /*padding: 8px 15px;*/
+    font-size: 14px;
+    font-family: "Montserrat",sans-serif;
     justify-content: right;
-    margin-left: 310px;
+    margin-left: 242px;
     border-radius: 1px;
     cursor: pointer;
     width: 118px;
-    height: 44px;
+    height: 40px;
     position: absolute;
 }
 
 .korzina-order-btn {
     width: 254px;
     height: 50px;
-    margin: auto;
+    margin-left: 50px;
+    margin-top: 20px;
     background: #f33c69;
     color: white;
     border: none;
-    /*padding: 12px;*/
     font-size: 16px;
-    border-radius: 1px;
+    border-radius: 3px;
     cursor: pointer;
+    font-family: "Montserrat",sans-serif;
+    justify-content: center;
 }
 
 .korzina-together-deal {
@@ -272,4 +369,77 @@ h1 {
 .korzina-new-price {
     color: #ff2e63;
     font-weight: 600;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 570px;
+    width: 90%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.modal-content button {
+    margin: 10px 5px 0 5px;
+    padding: 16px 33px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.korzina-modal-btn1{
+    background: rgba(231, 66, 106, 1);
+    border-radius: 3px;
+    color: white;
+    font-family: "Montserrat",sans-serif;
+}
+
+.korzina-modal-btn2{
+    background: rgba(237, 237, 240, 1);
+    border: 1px solid rgba(78, 157, 211, 1);
+    border-radius: 3px;
+    color: rgba(78, 157, 211, 1);
+    font-family: "Montserrat",sans-serif;
+}
+
+.modal-content .korzina-modal-btn2:hover {
+    background-color: rgba(78, 157, 211, 1);
+    color: white;
+}
+
+.modal-content .korzina-modal-btn1:hover {
+    background-color: rgb(122, 38, 53);
+}
+
+.korzina-remove-btn{
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 25px;
+    margin-left: 500px;
+    margin-top: -10px;
+}
+
+.modal-zakryt{
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 25px;
+    margin-left: 540px;
+    margin-top: -140px;
 }

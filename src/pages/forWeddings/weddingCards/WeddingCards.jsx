@@ -31,21 +31,21 @@ const naborData = [
         image: weddingImg3
     },
     {
-        id: 3,
+        id: 4,
         title: "Круглый набор",
         description: "40 макаронс в круглой коробке с персональной надписью",
         price: "3900 руб",
         image: weddingImg4
     },
     {
-        id: 3,
+        id: 5,
         title: "Круглый набор",
         description: "40 макаронс в круглой коробке с персональной надписью",
         price: "3900 руб",
         image: weddingImg5
     },
     {
-        id: 3,
+        id: 6,
         title: "Круглый набор",
         description: "40 макаронс в круглой коробке с персональной надписью",
         price: "3900 руб",

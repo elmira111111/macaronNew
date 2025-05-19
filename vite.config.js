@@ -11,8 +11,6 @@ export default defineConfig({
       '/api': {
         target: 'http://ec2-51-21-3-88.eu-north-1.compute.amazonaws.com',
         changeOrigin: true,
-        // ❌ Удали rewrite или закомментируй
-        // rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },

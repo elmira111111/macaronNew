@@ -12,6 +12,8 @@ import Section1 from "./pages/forWeddings/section1/Section1.jsx";
 import Korzina from "./pages/korzina/Korzina.jsx";
 import VyborVkusov from "./pages/vyborVkusov/VyborVkusov.jsx";
 import Dopolnenie from "./pages/dopolnenie/Dopolnenie.jsx";
+import KorzinaSection from "./pages/korzina/korzinaSection/KorzinaSection.jsx";
+import SliderTovara from "./pages/cardTovara/cardsSlider/SliderTovara.jsx";
 
 const App = () => {
     return (
@@ -20,7 +22,12 @@ const App = () => {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/vybor" element={<VyborKolich />} />
                 <Route path="/nabor" element={<NaborCards />} />
-                <Route path="/korzina" element={<Korzina />} />
+                <Route path="/korzina" element={
+                    <>
+                        <Korzina />
+                        <KorzinaSection />
+                    </>
+                } />
                 <Route path="/vkusy" element={<VyborVkusov />} />
                 <Route path="/dopolnenie" element={<Dopolnenie />} />
                 <Route path="/weddings" element={
@@ -35,7 +42,7 @@ const App = () => {
                         <>
                             <CardTovara />
                             <InfoSection />
-                            <CardsSlider />
+                            <SliderTovara />
                         </>
                     }
                 />

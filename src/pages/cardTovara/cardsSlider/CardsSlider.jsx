@@ -74,8 +74,6 @@ const CardsSlider = () => {
 
     return (
         <div className="slider-cards-wrapper container-app">
-            <h2>Вам могут понравиться</h2>
-
             <div ref={prevRef} className="slider-custom-prev">
                 <img src={prev} alt="Назад" />
             </div>
@@ -90,7 +88,7 @@ const CardsSlider = () => {
                     slidesPerView={4}
                     loop={true}
                     autoplay={{
-                        delay: 3000000,
+                        delay: 2000,
                         disableOnInteraction: false,
                     }}
                     navigation={{

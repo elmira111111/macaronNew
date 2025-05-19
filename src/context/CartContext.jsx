@@ -1,52 +1,70 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 export const CartContext = createContext();
 
-export const CartProvider = ({ children }) => {
-    const [cartItems, setCartItems] = useState([]);
+const CartProvider = ({ children }) => {
+    const [cartItems, setCartItems] = useState(() => {
+        const savedCart = localStorage.getItem("cartItems");
+        return savedCart ? JSON.parse(savedCart) : [];
+    });
 
-    // Добавление товара в корзину
-    const addToCart = (item) => {
-        setCartItems((prevItems) => {
-            const existingItem = prevItems.find((i) => i.id === item.id);
-            if (existingItem) {
-                return prevItems.map((i) =>
-                    i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
-                );
-            } else {
-                return [...prevItems, { ...item, quantity: 1 }];
-            }
-        });
-    };
+    useEffect(() => {
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    }, [cartItems]);
 
-    // Увеличить количество товара
     const increaseQty = (id) => {
-        setCartItems((prevItems) =>
-            prevItems.map((item) =>
+        setCartItems((prev) =>
+            prev.map((item) =>
                 item.id === id ? { ...item, quantity: item.quantity + 1 } : item
             )
         );
     };
 
-    // Уменьшить количество товара (минимум 1)
     const decreaseQty = (id) => {
-        setCartItems((prevItems) =>
-            prevItems
-                .map((item) =>
-                    item.id === id
-                        ? { ...item, quantity: item.quantity > 1 ? item.quantity - 1 : 1 }
-                        : item
-                )
-                // Можно убрать фильтр, если не хочешь удалять товары при 0
-                .filter((item) => item.quantity > 0)
+        setCartItems((prev) =>
+            prev.map((item) =>
+                item.id === id && item.quantity > 1
+                    ? { ...item, quantity: item.quantity - 1 }
+                    : item
+            )
         );
+    };
+
+    const removeFromCart = (id) => {
+        setCartItems((prev) => prev.filter((item) => item.id !== id));
+    };
+
+    const addToCart = (item) => {
+        setCartItems((prev) => {
+            const existing = prev.find((i) => i.id === item.id);
+            if (existing) {
+                return prev.map((i) =>
+                    i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
+                );
+            }
+            return [...prev, { ...item, quantity: 1 }];
+        });
+    };
+
+    // Новая функция для очистки корзины после оформления заказа
+    const clearCart = () => {
+        setCartItems([]);
     };
 
     return (
         <CartContext.Provider
-            value={{ cartItems, addToCart, increaseQty, decreaseQty }}
+            value={{
+                cartItems,
+                addToCart,
+                increaseQty,
+                decreaseQty,
+                removeFromCart,
+                clearCart,  // добавляем в контекст
+            }}
         >
             {children}
         </CartContext.Provider>
     );
 };
+
+export default CartProvider;
