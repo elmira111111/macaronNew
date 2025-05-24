@@ -8,7 +8,7 @@ import image3 from "../../assets/images/image3 copy.png"
 
 function Content() {
   return (
-    <div className="content">
+    <div className="contenT">
 
       <Macaron/>
 

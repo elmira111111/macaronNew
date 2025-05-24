@@ -18,11 +18,8 @@ import Dopolnenie from "./pages/dopolnenie/Dopolnenie.jsx";
 
 const App = () => {
   return (
-    <div>
-      <div className='wrapper'>
-
+    <div className="wrapper">
         <RouterProvider router={myRouter} />
-      </div>
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />

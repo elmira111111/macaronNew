@@ -33,7 +33,7 @@ function Present() {
         <div className='present'>
             {
                 news.map((item) => (
-                    <div className={`content ${item.id === 9 ? "hide-mobile" : ""}`} key={item.id}>
+                    <div className={`present-project ${item.id === 9 ? "hide-mobile" : ""}`} key={item.id}>
                          <img src={`http://ec2-51-21-3-88.eu-north-1.compute.amazonaws.com${item.images}`} alt={item.name} />
                         <div className='content-text'>
                             <h6>{item.price}</h6>

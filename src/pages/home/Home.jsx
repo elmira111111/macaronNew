@@ -19,6 +19,7 @@ import svg16 from "../../assets/images/16.svg"
 import svg15 from "../../assets/images/15.svg"
 import News from '../../component/New/News.jsx'
 import Ingredient from '../../component/ingredient/Ingredient.jsx'
+import Sets from '../../component/sets/Sets.jsx'
 
 function Home() {
     return (
@@ -259,7 +260,7 @@ function Home() {
                 </div>
 
                 <h3 className='sets'>Популярные наборы</h3>
-                <div style={{ display: "flex", justifyContent: "end", position: "relative", bottom: "65px", right: "50px" }}>
+                <div style={{ display: "flex", justifyContent: "end", position: "relative", bottom: "65px", right: "40px" }}>
                     <img className='im' style={{
                         objectFit: "cover",
                         width: "100px",
@@ -269,7 +270,7 @@ function Home() {
 
 
 
-                <div className='container'>
+                {/* <div className='container'>
                     <div className='container-content'>
                         <img src={img21} alt="" />
 
@@ -451,7 +452,9 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
+
+                <Sets/>
 
                 <div style={{ display: "flex", justifyContent: "center" }}>
                     <button className='b'>Все праздничные наборы</button>
@@ -477,16 +480,18 @@ function Home() {
                     <button></button>
                 </div>
 
-                <div style={{ display: "flex", justifyContent: "center" }}>
-                    <button className='new'>Все новости</button>
+                  <div style={{ display: "flex", justifyContent: "center", position: "relative", zIndex: 2 }}>
+                    <Link className='breadcrumb-link' to="/about">
+                        <button className='new'>Все новости</button>
+                    </Link>
                 </div>
 
-
-                <div style={{ position: "relative", right: "90px", bottom: "70px" }}>
+                <div style={{ position: "relative", right: "90px", bottom: "70px", zIndex: 1 }}>
                     <img className='im' style={{
                         objectFit: "cover",
                         width: "350px",
-                        height: "286px"
+                        height: "286px",
+                        pointerEvents: "none"  
                     }} src={img30} alt="" />
                 </div>
 

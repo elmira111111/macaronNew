@@ -29,11 +29,11 @@ function News() {
   }
 
   return (
-    <div className='news'>
+    <div className='n'>
       {news.map((item) => (
-        <div className='content' key={item.id}>
+        <div className='cont' key={item.id}>
           <img src={`http://ec2-51-21-3-88.eu-north-1.compute.amazonaws.com${item.images}`} alt={item.name} />
-          <div className='content-text'>
+          <div className='contentText'>
             <h6>{item.price}</h6>
             <h5>{item.name}</h5>
             <h4>{item.created_at}</h4>

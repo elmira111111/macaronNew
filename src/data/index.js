@@ -9,6 +9,13 @@ import img13 from "../assets/images/image13.png"
 import img14 from "../assets/images/image14.png"
 import img15 from "../assets/images/image15.png"
 import img16 from "../assets/images/image16.png"
+import img21 from "../assets/images/image21.png"
+import img22 from "../assets/images/image22.png"
+import img23 from "../assets/images/image23.png"
+import img24 from "../assets/images/image24.png"
+import img25 from "../assets/images/image25.png"
+import img26 from "../assets/images/image26.png"
+import svg15 from "../assets/images/15.svg"
 
 import img5Copy from "../assets/images/image5 copy.png"
 import img6Copy from "../assets/images/image6 copy.png"
@@ -66,4 +73,18 @@ export const present = [
 
     { id: 9, title: 'Экспресс-конкурс ко дню Святого Валентина',  img: img13Copy,p:"Подарок уже через 2 дняДень всех влюблённых не за горами. Расскажи о своих чувствах с помощью сладкой валентинки от МакаронШоп", number:"11.02.2023" },
 ]  
+
+export const sets = [
+    { id: 1, title: 'Сердце', img: img21, price: "2800 руб", p: "24 штуки в коробке в виде сердца.Ассорти из 6 вкусов ", imgs: svg15, text: "В корзину" },
+
+    { id: 2, title: 'Красота спасёт мир', img: img22, p: "Набор 16 шт. Вкусы: клубника - базилик, кокос, голубой сыр, пармезан ", imgs: svg15, text: "В корзину", price: "750 руб", },
+
+    { id: 3, title: 'Круглый набор', img: img23, p: "40 макаронс в круглой коробке с персональной надписью", imgs: svg15, text: "В корзину", price: "3900 руб", },
+
+    { id: 4, title: 'Набор на 9', img: img24, p: "Набор из 9 штук в квадратной коробке. Вкусы: шоколад, фисташка, вишня", imgs: svg15, text: "В корзину", price: "950 руб", },
+
+    { id: 5, title: 'Набор на 16', img: img25, p: "Набор 16 шт. Вкусы: соленая карамель, голубой сыр, пармезан, шоколад  ", imgs: svg15, text: "В корзину", price: "1500 руб", },
+
+   { id: 6, title: 'Сердце', img: img21, price: "2500 руб", p: "24 штуки в коробке в виде сердца.Ассорти из 6 вкусов ", imgs: svg15, text: "В корзину" },
+]
 
